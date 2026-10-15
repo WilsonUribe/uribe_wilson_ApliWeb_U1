@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Evento académico sobre paleontología del Cenozoico en Ecuador."
+  >
+  <title>Restos del Cenozoico | Ecuador</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido principal
+  </a>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Restos del Cenozoico, inicio">
+      RESTOS <span>DEL CENOZOICO</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="menu-principal"
+    >
+      <span class="menu-label">Menú</span>
+    </button>
+
+    <nav id="menu-principal" class="main-nav"
+         aria-label="Navegación principal">
+      <ul>
+        <li><a href="#evento">Evento</a></li>
+        <li><a href="#descubrimientos">Descubrimientos</a></li>
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-content">
+        <p class="eyebrow">ARQUEOLOGIA E HISTORIA</p>
+        <h1 id="titulo-principal">
+          Revisita el pasado de nuestro mundo
+        </h1>
+        <p>
+          Explora los millones de años de historia natural y conoce
+          los fósiles, el proceso de terraformación y la biodiversidad que marcaron su evolución en el Ecuador.
+        </p>
+        <a class="button" href="#inscripcion">
+          Quiero participar
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="evento"
+             aria-labelledby="titulo-evento">
+      <div class="section-heading">
+        <p class="eyebrow">UNA VISTA DEL PASADO</p>
+        <h2 id="titulo-evento">DESCUBRE:</h2>
+      </div>
+
+      <div class="event-grid">
+        <article class="info-card">
+          <h3>Era de los mamíferos</h3>
+          <p>
+            Conoce cómo cambio el mundo tras la extinción de los
+            dinosaurios y la adaptación de los antepasados de los
+            mamiferos y aves en un entorno en plano proceso de biodiversidad.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Ecuador primigenio</h3>
+          <p>
+            Acércate a los registros y descubre los cambios del ecosistema del actual Ecuador:
+            Desde la formación inicial de la cordillera de los Andes hasta los cambios del 
+            trópico a la edad de hielo del Paleógeno hasta el Pleistoceno.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Ciencia en acción</h3>
+          <p>
+            Coprende la documentación y preservación fósil de los antepasados y familiares
+            cercanos de los mamiferos de hoy.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section discoveries" id="descubrimientos"
+             aria-labelledby="titulo-descubrimientos">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORA</p>
+        <h2 id="titulo-descubrimientos">Un mundo por redescubrir</h2>
+        <p>
+          Escoge una categoria.
+        </p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar temas">
+        <button class="filter-button is-active"
+                type="button" data-filter="todos"
+                aria-pressed="true">
+          Todos
+        </button>
+        <button class="filter-button" type="button"
+                data-filter="mamiferos" aria-pressed="false">
+          Mamíferos
+        </button>
+        <button class="filter-button" type="button"
+                data-filter="ambientes" aria-pressed="false">
+          Ambientes
+        </button>
+        <button class="filter-button" type="button"
+                data-filter="ciencia" aria-pressed="false">
+          Investigación
+        </button>
+      </div>
+
+      <div class="discovery-grid" id="galeria">
+        <article class="discovery-card" data-category="mamiferos">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8SDH0k3dw-WKb3Mt8WY3JuNRy4UnSPJranspEUffPY3TOfHJA5eBLkyg&s=10"
+            alt="Pintura del Equus Amerhippus andium"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Mamíferos del pasado</h3>
+            <p>
+              Documenta la diversidad de los mamíferos y su evolución 
+              durante el Cenozoico.
+            </p>
+          </div>
+        </article>
+
+        <article class="discovery-card" data-category="ambientes">
+          <img
+            src="https://blog.indoamerica.edu.ec/wp-content/uploads/2023/04/pambamarca-cayambe.webp"
+            alt="Paisaje de Cangahua"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Transformación de los ecosistemas</h3>
+            <p>
+              Registra los diversos cambios ambientales y su evolución
+              en la biologia.
+            </p>
+          </div>
+        </article>
+
+        <article class="discovery-card" data-category="ciencia">
+          <img
+            src="https://media.wired.com/photos/5932b86d4cd5ce6f96c0b721/master/pass/short-faced-bear-family-portrait.jpg"
+            alt="Craneos del Arctotherium"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Paleontológia</h3>
+            <p>
+              Conoce las herramientas de estudio y analisis de
+              evidencias del pasado.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <p id="filter-status" class="visually-hidden"
+         aria-live="polite"></p>
+    </section>
+
+    <section class="section program" id="programa"
+             aria-labelledby="titulo-programa">
+      <div>
+        <p class="eyebrow">AGENDA</p>
+        <h2 id="titulo-programa">Jornada de exploración</h2>
+        <p>
+          Orientacións.
+        </p>
+      </div>
+
+      <ol class="schedule">
+        <li>
+          <time datetime="09:00">09:00</time>
+          <div>
+            <h3>Introducción</h3>
+            <p>Presentación de la paleontología del Cenozoico y sus eras.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="10:00">10:00</time>
+          <div>
+            <h3>Conferencia</h3>
+            <p>Fósiles y reconstrucción de antiguos ecosistemas.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="11:30">11:30</time>
+          <div>
+            <h3>Taller de observación</h3>
+            <p>Interpretación didáctica de evidencias fósiles.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <aside class="event-details" aria-labelledby="titulo-detalles">
+      <h2 id="titulo-detalles">Información del evento</h2>
+      <dl>
+        <div>
+          <dt>Fecha</dt>
+          <dd>Por confirmar</dd>
+        </div>
+        <div>
+          <dt>Lugar</dt>
+          <dd>Por confirmar, Ecuador</dd>
+        </div>
+        <div>
+          <dt>Modalidad</dt>
+          <dd>Por confirmar</dd>
+        </div>
+        <div>
+          <dt>Público</dt>
+          <dd>Estudiantes y público interesado</dd>
+        </div>
+      </dl>
+    </aside>
+
+    <section class="section registration" id="inscripcion"
+             aria-labelledby="titulo-inscripcion">
+      <div class="registration-intro">
+        <p class="eyebrow">FORMA PARTE DE LA EXPERIENCIA</p>
+        <h2 id="titulo-inscripcion">Inscríbete al evento</h2>
+        <p>
+          Completa tus datos para participar.
+        </p>
+      </div>
+
+      <form id="registration-form" novalidate>
+        <div class="form-field">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text"
+                 autocomplete="name" required
+                 minlength="3" maxlength="100">
+          <small class="field-error" id="nombre-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email"
+                 autocomplete="email" required>
+          <small class="field-error" id="correo-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="perfil">Perfil del participante</label>
+          <select id="perfil" name="perfil" required>
+            <option value="">Selecciona una opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="docente">Docente</option>
+            <option value="investigador">Investigador/a</option>
+            <option value="publico">Público general</option>
+          </select>
+          <small class="field-error" id="perfil-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="comentario">Intereses o comentarios (opcional)</label>
+          <textarea id="comentario" name="comentario"
+                    rows="4" maxlength="500"></textarea>
+        </div>
+
+        <button class="button submit-button" type="submit">
+          Enviar inscripción
+        </button>
+
+        <p id="form-status" role="status" aria-live="polite"></p>
+        <p class="form-note">
+          Demostración: los datos no se envían a un servidor.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#inicio">RESTOS DEL CENOZOICO</a>
+    <p>Proyecto educativo de divulgación paleontológica.</p>
+  </footer>
+</body>
+</html>
